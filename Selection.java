@@ -3,7 +3,7 @@
 
 #Code
 
-class Selection
+public class Selection
 {
   void sort(int arr[])
   {
@@ -11,7 +11,7 @@ class Selection
     {
       int min = i;
       for(int j=i+1; j<arr.length;j++)
-      if(arr[i]<arr[min])
+      if(arr[j]<arr[min])
       min = j;
       
       int temp=arr[min];
@@ -30,11 +30,12 @@ class Selection
   public static void main(String args[])
   {
     Selection s = new Selection();
-    int arr={26, 76, 1, 34, 24, 98, 10, 86};
+    int arr[]={26, 76, 1, 34, 24, 98, 10, 86};
     s.print(arr);
     s.sort(arr);
     s.print(arr);
   }
 }
+    
     
     
