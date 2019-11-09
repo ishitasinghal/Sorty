@@ -27,4 +27,14 @@ class Selection
     System.out.println();
   }
   
-  
+  public static void main(String args[])
+  {
+    Selection s = new Selection();
+    int arr={26, 76, 1, 34, 24, 98, 10, 86};
+    s.print(arr);
+    s.sort(arr);
+    s.print(arr);
+  }
+}
+    
+    
