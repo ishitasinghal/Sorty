@@ -8,9 +8,9 @@ public class Bubble
 {
   void bsort(int arr[])
   {
-    for(int i=0;i<n;i++)
+    for(int i=0;i<arr.length;i++)
         {
-          for(int j=0;j<arr.length-i=1;j++) //to reduce the number of steps
+          for(int j=0;j<arr.length-i-1;j++) //to reduce the number of steps
           {
             if(arr[j]>arr[j+1])
             {
@@ -26,7 +26,7 @@ public class Bubble
         {
           for(int i = 0; i<arr.length;i++)
           {
-            System.out.println(arr[i]+" ");
+            System.out.print(arr[i]+" ");
           }
           System.out.println();
         }
@@ -34,11 +34,9 @@ public class Bubble
         public static void main(String args[])
         {
           Bubble b = new Bubble();
-          int arr={23, 90, 64, 87, 52, 42, 31, 67, 19, 8, 0};
-          b.print();
-          b.bsort();
-          b.print();
+          int arr[]={23, 90, 64, 87, 52, 42, 31, 67, 19, 8, 0};
+          b.print(arr);
+          b.bsort(arr);
+          b.print(arr);
         }
         }
-        }
-        
