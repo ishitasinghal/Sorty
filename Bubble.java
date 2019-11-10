@@ -31,5 +31,13 @@ class Bubble
           System.out.println();
         }
         
-        
+        public static void main(String args[])
+        {
+          Bubble b = new Bubble();
+          int arr={23, 90, 64, 87, 52, 42, 31, 67, 19, 8, 0};
+          b.print();
+          b.bsort();
+          b.print();
+        }
+        }
         
