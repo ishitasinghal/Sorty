@@ -37,5 +37,5 @@ public class Selection
   }
 }
     
-    
-    
+
+//Complexity of the above code is O(n^2) as there are two nested loops !
