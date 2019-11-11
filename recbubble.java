@@ -20,4 +20,22 @@ public class Bubble
     }
     sortb(arr, n-1);
   }
+  void print(int arr[], n)
+  {
+    for(int j=0; j<n; j++)
+    {
+      System.out.print(arr[j]+" ");
+    }
+    System.out.println();
+  }
+  public static void main(String args[])
+  {
+    int arr[] = { 23, 65, 1, 29, 50, 87, 10, 93, 47};
+    Bubble b = new Bubble();
+    b.print(arr, arr.length);
+    b.sortb(arr, arr.length);
+    b.print(arr, arr.length);
+  }
+}
+    
   
