@@ -20,7 +20,7 @@ public class Bubble
     }
     sortb(arr, n-1);
   }
-  void print(int arr[], n)
+  void print(int arr[], int n)
   {
     for(int j=0; j<n; j++)
     {
