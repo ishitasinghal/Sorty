@@ -34,9 +34,9 @@ class Insert
   {
     int arr[]={12, 45, 23,1, 0, 87, 75, 30, 74, 100};
     Insert i = new Insert();
-    i.print(arr[]);
-    i.insort(arr[]);
-    i.print(arr[]);
+    i.print(arr);
+    i.insort(arr);
+    i.print(arr);
   }
 }
     
