@@ -21,3 +21,22 @@ class Insert
     }
   }
   
+  void print(int arr[])
+  {
+    for(int i=0; i<arr.length;i++)
+    {
+      System.out.print(arr[i]+" ");
+    }
+    System.out.println();  //to drop to a new line
+  }
+  
+  public static void main(String args[])
+  {
+    int arr[]={12, 45, 23,1, 0, 87, 75, 30, 74, 100};
+    Insert i = new Insert();
+    i.print(arr[]);
+    i.insort(arr[]);
+    i.print(arr[]);
+  }
+}
+    
