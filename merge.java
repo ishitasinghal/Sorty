@@ -51,8 +51,17 @@ public class Mergesort
   
   static void print(int arr[])
   {
-    for(int i=0; i<n;i++)
+    for(int i=0; i<arr.length;i++)
       System.out.print(arr[i]+" ");
     System.out.println();
   }
-  
+  public static void main(String args[])
+  {
+    int arr[] = { 54, 34, 12, 0, 87, 30, 94, 54, 80, 31, 3, 17};
+    Mergesort m = new Mergesort();
+    m.print(arr);
+    m.sort(arr, 0, arr.length-1);
+    print(arr);
+  }
+}
+
