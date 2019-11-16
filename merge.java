@@ -31,6 +31,12 @@ public class Mergesort
       }
       k++;
     }
+    while(i<n1)
+    {
+        arr[k]=L[i];
+        i++;
+        k++;
+    }
     while(j<n2)
     {
       arr[k]=R[j];
@@ -58,10 +64,11 @@ public class Mergesort
   public static void main(String args[])
   {
     int arr[] = { 54, 34, 12, 0, 87, 30, 94, 54, 80, 31, 3, 17};
-    Mergesort m = new Mergesort();
-    m.print(arr);
-    m.sort(arr, 0, arr.length-1);
+    Mergesort ms = new Mergesort();
+    print(arr);
+    ms.sort(arr, 0, arr.length-1);
     print(arr);
   }
 }
+
 
