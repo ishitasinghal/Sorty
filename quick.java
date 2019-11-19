@@ -30,4 +30,12 @@ public class Quick
           sort(arr,p+1,h);
         }
       }
+static void print(int arr[])
+{
+  for(int i=-;i<arr.length;i++)
+  {
+    System.out.print(arr[i]+" ");
+  }
+  System.out.println();
+}
       
