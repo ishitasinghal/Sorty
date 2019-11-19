@@ -26,7 +26,7 @@ public class Quick
         arr[h]=temp;
         return i+1;
       }
-      void sort(int att[], int l, int h)
+      void sort(int arr[], int l, int h)
       {
         if(l<h)
         {
@@ -39,7 +39,7 @@ public class Quick
 //function to print array
 static void print(int arr[])
 {
-  for(int i=-;i<arr.length;i++)
+  for(int i=0;i<arr.length;i++)
   {
     System.out.print(arr[i]+" ");
   }
