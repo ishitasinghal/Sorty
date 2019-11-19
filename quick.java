@@ -17,3 +17,17 @@ public class Quick
       {
         i++;
         int temp=arr[i];
+        arr[i+1]=arr[h];
+        arr[h]=temp;
+        return i+1;
+      }
+      void sort(int att[], int l, int h)
+      {
+        if(l<h)
+        {
+          int p=partition(arr,l,h);
+          sort(arr,l,p-1);  
+          sort(arr,p+1,h);
+        }
+      }
+      
