@@ -17,6 +17,11 @@ public class Quick
       {
         i++;
         int temp=arr[i];
+        arr[i]=arr[j];
+        arr[j]=temp;
+      }
+    }
+        int temp=arr[i+1];
         arr[i+1]=arr[h];
         arr[h]=temp;
         return i+1;
