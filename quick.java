@@ -26,10 +26,12 @@ public class Quick
         if(l<h)
         {
           int p=partition(arr,l,h);
-          sort(arr,l,p-1);  
-          sort(arr,p+1,h);
+          sort(arr,l,p-1);   //partition 1 
+          sort(arr,p+1,h);   //partition 2
         }
       }
+
+//function to print array
 static void print(int arr[])
 {
   for(int i=-;i<arr.length;i++)
@@ -38,4 +40,14 @@ static void print(int arr[])
   }
   System.out.println();
 }
-      
+//main function      
+public static void main(String args[])
+{
+  int arr[]={34,87,1, 90, 23, 86, 93, 1, 2 };
+  Quick q = new Quick();
+  
+  q.print(arr);
+  q.sort(arr,0,arr.length-1);
+  q.print(arr);
+}
+    }
