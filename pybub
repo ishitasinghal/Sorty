@@ -1,4 +1,6 @@
 #function to sort a given array using bubble sort.
+#this is the python code, problem statement is from 
+#hackerrank.
 
 def countSwaps(a):
     swap=0
