@@ -35,3 +35,18 @@ arr[j+1]=l;
     r.print(arr, arr.length);
   }
 }
+
+
+
+
+
+Algo for heap sort.
+
+def heapify(arr, n, i):
+# Find largest among root and children.
+largest = i.
+l = 2 * i + 1.
+r = 2 * i + 2.
+if l < n and arr[i] < arr[l]:
+largest = l.
+if r < n and arr[largest] < arr[r]:
